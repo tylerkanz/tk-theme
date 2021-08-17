@@ -1,17 +1,11 @@
 <?php get_header(); ?>
+<div class="entry-content">
 <body>
-    <h1><?php bloginfo('name'); ?></h1>
-    <h2><?php bloginfo('description'); ?></h2>
-
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-            <h3><?php the_title(); ?></h3>
-
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
             <?php edit_post_link(); ?>
-
-        <?php endwhile; ?>
+    <?php endwhile; ?>
 
         <?php
         if (get_next_posts_link()) {
@@ -26,9 +20,10 @@
 
     <?php else : ?>
 
-        <p>No posts found. :(</p>
+        <h1>No posts found. :(</h1>
 
     <?php endif; ?>
     <?php wp_footer(); ?>
 </body>
+</div>
 <?php get_footer(); ?>

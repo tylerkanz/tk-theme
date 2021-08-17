@@ -10,3 +10,7 @@ Requires PHP: 7.4
 License URI: https://tylerkanz.com
 
 */
+
+.entry-content {
+    min-height: 85vh;
+}
