@@ -11,6 +11,11 @@ License URI: https://tylerkanz.com
 
 */
 
+@font-face {
+    font-family: 'Orbitron';
+    src: url('assets/fonts/Orbitron.ttf');
+}
+
 .entry-content {
     min-height: 85vh;
 }
