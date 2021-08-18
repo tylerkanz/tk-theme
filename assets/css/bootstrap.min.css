@@ -4340,7 +4340,8 @@ tbody.collapse.show {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
-        flex-direction: row
+        flex-direction: row;
+        align-items: center;
     }
     .navbar-expand-md .navbar-nav .dropdown-menu {
         position: absolute
