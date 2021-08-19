@@ -3,7 +3,7 @@
 * PHP Files
 */
 require get_template_directory() . '/inc/customizer.php';
-
+require get_template_directory() . '/inc/carousel.php';
 require get_template_directory() . '/inc/synthwave.php';
 /**
  * Enqueue Scripts
@@ -32,3 +32,10 @@ function register_my_menu() {
     register_nav_menu('header-menu',__( 'Header Menu' ));
   }
   add_action( 'init', 'register_my_menu' );
+
+  // Add theme support for Featured Images
+add_theme_support('post-thumbnails', array(
+    'post',
+    'page',
+    'custom-post-type-name',
+    ));
