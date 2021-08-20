@@ -2,9 +2,19 @@
 /**
 * PHP Files
 */
+
+//Customizer Functions
 require get_template_directory() . '/inc/customizer.php';
+
+//Accessories Functions
+require get_template_directory() . '/inc/accessories.php';
+
+//Carousel
 require get_template_directory() . '/inc/carousel.php';
+
+//Synthwave
 require get_template_directory() . '/inc/synthwave.php';
+
 /**
  * Enqueue Scripts
  */
