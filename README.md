@@ -4,7 +4,7 @@
 ### Synthwave
 `[synthwave]`
 
-### Synthwave
+### Carousel
 `[tk_carousel category="post-category-slug"]`
 
 ### Buttons
