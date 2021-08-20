@@ -3365,13 +3365,13 @@ tbody.collapse.show {
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
-    color: #212529;
+    color: #b026ff;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #343a40;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    border: 1px solid #b026ff;
+    border-radius: .25rem;
 }
 
 .dropup .dropdown-menu {
@@ -3469,21 +3469,22 @@ tbody.collapse.show {
 .dropdown-item {
     display: block;
     width: 100%;
+    font-family: 'Orbitron';
     padding: .25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #817E7E;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #16181b;
+    color: #B026FF;
     text-decoration: none;
-    background-color: #f8f9fa
+    background-color: #292929;
 }
 
 .dropdown-item.active,
@@ -4156,7 +4157,7 @@ tbody.collapse.show {
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    height: 64px;
+    min-height: 64px;
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -4608,7 +4609,7 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .5);
+    color: #817E7E;
     margin: 0 .5rem;
 }
 
