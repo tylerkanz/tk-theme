@@ -40,7 +40,7 @@
 }
 
 .gallery-item-3 {
-    box-shadow: 0 0 10px rgb(176 38 255), 0 0 60px rgb(176 38 255), 0 0 10px rgb(79 79 79 / 66%), 0 0 10px rgb(172 0 193 / 91%);
+    box-shadow: 0 0 5px rgb(176 38 255), 0 0 40px rgb(176 38 255), 0 0 5px rgb(79 79 79 / 66%), 0 0 10px rgb(172 0 193 / 91%);
     height: 300px;
     opacity: 1;
     left: 50%;
