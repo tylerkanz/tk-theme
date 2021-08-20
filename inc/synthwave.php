@@ -15,7 +15,7 @@ function synthwave_func()
             position: absolute;
             right: 0;
             width: 100%;
-            height: 100%;
+            height: 80%;
         }
 
         /*main-container-synth----------------------------------------*/
@@ -23,13 +23,6 @@ function synthwave_func()
             background: #000 url(https://s3.code-smart.com/img/stars.png) repeat top center;
             background-size: cover;
             overflow: hidden;
-            /*background------------------------------------------*/
-            /*sun-----------------------------------------------*/
-            /*mountains--------------------------------------*/
-            /*grid glow top-----------------------------------*/
-            /*bottom bg----------------------------------------*/
-            /*moving grid-------------------------------------*/
-            /*Logo-------------------------------------------*/
         }
 
         .container-synth .twinkling {
@@ -52,6 +45,7 @@ function synthwave_func()
             display: block;
             background: linear-gradient(to top, transparent 25%, #2f5894 25%, #848484);
             z-index: 3;
+            height: 42rem;
             opacity: 0.35;
         }
 
@@ -106,14 +100,14 @@ function synthwave_func()
             position: absolute;
             bottom: 0;
             z-index: 4;
-            box-shadow: 0 0 7vh -1vh #1e0067;
+            box-shadow: 0 0 7vh -1vh #490073
         }
 
         .container-synth .ground {
             position: absolute;
             width: 100%;
             height: 25%;
-            background: black;
+            background: #1e1e1e;
             bottom: 0;
             z-index: 1;
         }
@@ -248,6 +242,7 @@ function synthwave_func()
             top: 48px;
         }
     </style>
+    <div style="height: 60rem">
     <div class="container-synth fullscreen">
         <div class="twinkling fullscreen"></div>
         <div class="overlay fullscreen"></div>
@@ -282,5 +277,6 @@ function synthwave_func()
             <h2>Web Developer</h2>
 
         </div>
+    </div>
     </div>
 <?php } ?>
