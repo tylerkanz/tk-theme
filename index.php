@@ -3,7 +3,7 @@
 
     <body>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="container-fluid">
+                <div class="container-fluid" style="margin-top: 64px">
                     <?php the_content(); ?>
                 </div>
                 <?php wp_link_pages(); ?>

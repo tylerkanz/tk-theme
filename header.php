@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
     <script src="https://kit.fontawesome.com/8972077944.js" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
             <?php

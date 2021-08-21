@@ -28,6 +28,12 @@ License URI: https://tylerkanz.com
     margin: 5rem 0 2rem 0;
 }
 
+:target:before {
+    content: "";
+    display: block;
+    margin: 75px 0 0;
+}
+
 
 /* Button Styling */
 

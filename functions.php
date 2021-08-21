@@ -49,6 +49,9 @@ function register_my_menu()
 }
 add_action('init', 'register_my_menu');
 
+//Because thats annoying
+add_filter( 'show_admin_bar', '__return_false' );
+
 // Add theme support for Featured Images
 add_theme_support('post-thumbnails', array(
     'post',
