@@ -4,6 +4,7 @@
 add_shortcode('tk_button', 'tk_button_func');
 function tk_button_func($atts = array())
 {
+    ob_start();
     extract(shortcode_atts(array('text' => '', 'href' => '#', 'type' => 'text'), $atts)); ?>
     <div class="portfolio-experiment">
         <a href="<?php echo $href; ?>">
@@ -23,4 +24,6 @@ function tk_button_func($atts = array())
             <?php endif; ?>
         </a>
     </div>
-<?php } ?>
+<?php 
+return ob_get_clean();
+} ?>

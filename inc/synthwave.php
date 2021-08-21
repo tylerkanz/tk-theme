@@ -242,7 +242,7 @@ function synthwave_func()
             top: 48px;
         }
     </style>
-    <div style="height: 60rem">
+    <div style="height: 47rem">
     <div class="container-synth fullscreen">
         <div class="twinkling fullscreen"></div>
         <div class="overlay fullscreen"></div>
