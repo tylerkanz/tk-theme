@@ -12,4 +12,4 @@ Type can be either "icon" or "text" (Icon being Font Awesome classes - "fas fa-c
 `[tk_button text="fas fa-chevron-down" href="example.com" type="icon"]` 
 
 ## Current Homepage 
-https://pastebin.com/du4eDgEj
+https://pastebin.com/Pw1am47E
