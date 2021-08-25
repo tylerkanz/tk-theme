@@ -3,7 +3,7 @@ Theme Name: TK Theme
 Theme URI: https://github.com/tylerkanz/tk-theme
 Author: Tyler Kanz
 Author URI: https://tylerkanz.com
-Version: 0.05
+Version: 0.06
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 7.4
@@ -130,7 +130,7 @@ License URI: https://tylerkanz.com
 
 .portfolio-experiment a .text {
     font-family: proxima-nova, monospace;
-    transform: translate3d(0, 0.7em, 0);
+    transform: translate3d(0, 0.5em, 0);
     display: block;
     transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
