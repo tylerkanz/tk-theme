@@ -58,3 +58,12 @@ add_theme_support('post-thumbnails', array(
     'page',
     'custom-post-type-name',
 ));
+
+//Check for Updates
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/tylerkanz/tk-theme/',
+	__FILE__,
+	'tk-theme'
+);
+$myUpdateChecker->setBranch('main');
