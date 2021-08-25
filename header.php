@@ -13,7 +13,7 @@
             <?php
             if (get_theme_mod('tk_header_logo')) : ?>
                 <div>
-                    <img style="max-width: 75px; max-height: 50px;" src="<?php echo get_theme_mod('tk_header_logo'); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+                    <img style="max-width: 75px; max-height: 40px;" src="<?php echo get_theme_mod('tk_header_logo'); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 </div>
             <?php
             else : ?>
