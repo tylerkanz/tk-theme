@@ -39,7 +39,7 @@ function tk_enqueue()
     wp_enqueue_script('bootstrap');
     wp_register_script('popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), false, true);
     wp_enqueue_script('popper');
-    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/jquery-3.2.1.slim.min.js', array('jquery'), NULL, false);
+    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/jquery-3.6.0.min.js', array('jquery'), NULL, false);
 }
 add_action('wp_enqueue_scripts', 'tk_enqueue');
 
@@ -58,3 +58,12 @@ add_theme_support('post-thumbnails', array(
     'page',
     'custom-post-type-name',
 ));
+
+//Check for Updates
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/tylerkanz/tk-theme/',
+	__FILE__,
+	'tk-theme'
+);
+$myUpdateChecker->setBranch('main');
