@@ -8,18 +8,13 @@ Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 7.4
 License URI: https://tylerkanz.com
+
 */
-/* -----------------------------------------
-	Table of Contents
---------------------------------------------
-.. 01. General
-.. 02. Header
-.. 03. Modules
-.. 04. Footer
-.. 05. Comments
-.. 06. Widgets Styling
-.. 07. WordPress defaults
-.. 08. Utilities
+/* Table of Contents
+ * -----------------
+ * Loader
+ * Typography
+ * Buttons
 */
 body {
   text-align: center;

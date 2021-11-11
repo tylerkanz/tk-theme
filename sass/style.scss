@@ -9,6 +9,7 @@ Tested up to: 5.8
 Requires PHP: 7.4
 License URI: https://tylerkanz.com
 */
+
 /* -----------------------------------------
 	Table of Contents
 --------------------------------------------
@@ -21,11 +22,13 @@ License URI: https://tylerkanz.com
 .. 07. WordPress defaults
 .. 08. Utilities
 */
+
 body {
-  text-align: center;
-}
-body > #container {
-  text-align: left;
-  margin: 0 auto;
-  width: 500px;
-}
+    text-align: center;
+    > #container {
+      text-align:left;
+      margin:0 auto;
+      width:500px;
+    }
+  }
+  
