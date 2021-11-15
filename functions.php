@@ -6,15 +6,12 @@
 
 //Customizer Functions
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/patterns.php';
 
-//Accessories Functions
-require get_template_directory() . '/inc/accessories.php';
-
-//Carousel
-require get_template_directory() . '/inc/carousel.php';
-
-//Synthwave
-require get_template_directory() . '/inc/synthwave.php';
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'responsive-embeds' );
+add_theme_support( 'editor-styles' );
+add_theme_support( 'wp-block-styles' );
 
 /**
  * Register Custom Navigation Walker
@@ -32,14 +29,7 @@ function tk_enqueue()
 {
     ## Enqueue CSS ##
     wp_enqueue_style('styles', get_template_directory_uri() . '/style.css');
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
 
-    ## Enqueue JS ##
-    wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), false, true);
-    wp_enqueue_script('bootstrap');
-    wp_register_script('popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), false, true);
-    wp_enqueue_script('popper');
-    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/jquery-3.6.0.min.js', array('jquery'), NULL, false);
 }
 add_action('wp_enqueue_scripts', 'tk_enqueue');
 
