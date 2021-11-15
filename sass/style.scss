@@ -28,5 +28,26 @@ License URI: https://tylerkanz.com
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+h1 {
+	font-size: 70px;
+}
 
+html, body {
+	background-color: #212529;
+}
 
+.jumbotron h3,
+.jumbotron a {
+	margin: 1rem 0;
+}
+
+.jumbotron {
+	background: url('../assets/img/synthwave.jpg') no-repeat center center fixed;
+}
+
+.entry-content {
+	min-height: 100vh;
+	padding-top: 64px;
+	flex-flow: column;
+	display: flex;
+}
