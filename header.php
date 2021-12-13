@@ -8,8 +8,19 @@
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
     <script src="https://kit.fontawesome.com/8972077944.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" role="navigation">
+
+<script>
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 1) {
+            $('.custom-nav-transition').css('background', '#323233');
+        } else {
+            $('.custom-nav-transition').css('background', 'transparent');
+        }
+    });
+</script>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-nav-transition" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
             <?php

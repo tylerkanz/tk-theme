@@ -5,16 +5,14 @@
     <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
     </div>
-        <script>
+        <!-- <script>
             $(window).on("load", function() {
                 $(".loader-wrapper").fadeOut("slow");
             });
-        </script>
+        </script> -->
         <div class="se-pre-con"></div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="container-fluid" style="flex: 2">
                     <?php the_content(); ?>
-                </div>
                 <?php wp_link_pages(); ?>
                 <?php edit_post_link(); ?>
             <?php endwhile; ?>

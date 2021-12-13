@@ -10,6 +10,7 @@ Requires PHP: 7.4
 License URI: https://tylerkanz.com
 */
 
+
 /* -----------------------------------------
 	Table of Contents
 --------------------------------------------
@@ -27,27 +28,41 @@ License URI: https://tylerkanz.com
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-
 h1 {
-	font-size: 70px;
+    font-size: 70px;
 }
 
-html, body {
-	background-color: #212529;
+html,
+body {
+    background-color: #1e1e1e;
 }
 
-.jumbotron h3,
-.jumbotron a {
-	margin: 1rem 0;
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: #969696;
 }
 
-.jumbotron {
-	background: url('../assets/img/synthwave.jpg') no-repeat center center fixed;
+.hero-section h1 {
+    color: #f3f6f4;
+}
+
+.hero-section {
+    background: url('assets/img/hero-background.png') no-repeat center center fixed;
+    height: 100vh
 }
 
 .entry-content {
-	min-height: 100vh;
-	padding-top: 64px;
-	flex-flow: column;
-	display: flex;
+    flex-flow: column;
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 0.5rem;
+}
+
+.custom-nav-transition {
+    transition: .5s;
 }
