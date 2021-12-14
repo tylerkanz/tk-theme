@@ -11141,6 +11141,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "TK Font";
+  src: url("assets/fonts/icomoon.woff") format("woff"), url("assets/fonts/icomoon.ttf") format("ttf"), url("assets/fonts/icomoon.eot") format("eot");
+}
 h1, .h1 {
   font-size: 70px;
 }
@@ -11182,4 +11186,51 @@ h4,
 
 .custom-nav-transition {
   transition: 0.5s;
+}
+
+.skills .fab {
+  font-size: 35px;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+.skills span {
+  font-size: 30px;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+.skills {
+  margin: 1rem 0;
+}
+
+.tk-font {
+  font-family: "TK Font";
+}
+
+.icon-nativescript:before {
+  content: "\e900";
+}
+
+.neon-btn {
+  outline: 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #414141;
+  background: transparent;
+  color: #414141;
+  font-weight: 600;
+  text-decoration: none;
+  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.neon-btn:hover {
+  background-color: rgba(68, 255, 68, 0.78);
+  color: #ffffff;
+  box-shadow: 0 0 5px #22ff2d, 0 0 20px rgba(65, 255, 65, 0.8), 0 0 35px rgba(65, 255, 65, 0.7), 0 0 50px rgba(255, 255, 0, 0.6);
+  border-color: #fff;
 }
