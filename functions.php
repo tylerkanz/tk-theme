@@ -49,6 +49,13 @@ add_theme_support('post-thumbnails', array(
     'custom-post-type-name',
 ));
 
+
+//Shortcodes
+include('inc/shortcodes/post-preview.php');
+
+//Post Options
+include('inc/post-options/git-url.php');
+
 //Check for Updates
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
