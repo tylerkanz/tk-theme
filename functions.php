@@ -57,3 +57,14 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'tk-theme'
 );
 $myUpdateChecker->setBranch('main');
+
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
+function wpse_wpautop_nobr( $content ) {
+    return wpautop( $content, false );
+}
+
+add_filter( 'the_content', 'wpse_wpautop_nobr' );
+add_filter( 'the_excerpt', 'wpse_wpautop_nobr' );
