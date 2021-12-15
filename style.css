@@ -10544,3 +10544,12 @@ h4,
 .card {
   border: none;
 }
+
+.tk-section {
+  margin: 3rem 0;
+}
+
+.portfolio-slider .carousel-inner {
+  width: 80%;
+  margin: auto;
+}

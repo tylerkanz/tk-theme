@@ -5,7 +5,7 @@ function tk_preview_posts($atts)
 {
     ob_start(); ?>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <?php
             $args = array(
                 'posts_per_page' => 4,
@@ -20,8 +20,12 @@ function tk_preview_posts($atts)
                         <img class="card-img-top" src="<?php echo $image[0]; ?>" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $post->post_title ?></h5>
-                            <p class="card-text"><?php echo substr($post->post_content, 0, 150) . '...' ?></p>
                             <?php
+                            if (strlen($post->post_content) > 149) { ?>
+                                <p class="card-text"><?php echo substr($post->post_content, 0, 150) . '...' ?></p>
+                            <?php } else { ?>
+                                <p class="card-text"><?php echo $post->post_content ?></p>
+                            <?php }
                             $git_url = get_post_meta($post->ID, 'github_repo_url', true);
                             if ($git_url) { ?>
                                 <a href="<?php echo $git_url ?>" target="_blank" class="btn btn-outline-primary">View on GitHub &nbsp<i class="fab fa-github"></i></a>
