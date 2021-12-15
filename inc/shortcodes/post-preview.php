@@ -15,7 +15,7 @@ function tk_preview_posts($atts)
             $posts = get_posts($args);
             foreach ($posts as $post) : setup_postdata($post); ?>
                 <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card m-auto mb-4" style="width: 18rem;">
                         <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
                         <img class="card-img-top" src="<?php echo $image[0]; ?>" alt="Card image cap">
                         <div class="card-body">
