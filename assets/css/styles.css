@@ -1,0 +1,26 @@
+/*
+Theme Name: TK Theme
+Theme URI: https://github.com/tylerkanz/tk-theme
+Author: Tyler Kanz
+Author URI: https://tylerkanz.com
+Version: 0.08
+Requires at least: 5.0
+Tested up to: 5.8
+Requires PHP: 7.4
+License URI: https://tylerkanz.com
+
+*/
+/* Table of Contents
+ * -----------------
+ * Loader
+ * Typography
+ * Buttons
+*/
+body {
+  text-align: center;
+}
+body > #container {
+  text-align: left;
+  margin: 0 auto;
+  width: 500px;
+}

@@ -8,14 +8,26 @@
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
     <script src="https://kit.fontawesome.com/8972077944.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" role="navigation">
+
+<script>
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 1) {
+            $('.custom-nav-transition').css('background', '#323233');
+        } else {
+            $('.custom-nav-transition').css('background', 'transparent');
+        }
+    });
+</script>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-nav-transition" role="navigation">
     <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
             <?php
             if (get_theme_mod('tk_header_logo')) : ?>
                 <div>
-                    <img style="max-width: 75px; max-height: 40px;" src="<?php echo get_theme_mod('tk_header_logo'); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+                    <img style="max-width: 200px; max-height: 50px;" src="<?php echo get_theme_mod('tk_header_logo'); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 </div>
             <?php
             else : ?>
