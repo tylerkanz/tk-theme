@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <div class="entry-content">
 
-    <body>
     <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -33,7 +32,5 @@
                 <h1>Nothing here :(</h1>
             </div>
         <?php endif; ?>
-        <?php wp_footer(); ?>
-    </body>
 </div>
 <?php get_footer(); ?>
