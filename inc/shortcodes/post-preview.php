@@ -3,6 +3,14 @@ add_shortcode('tk-preview-posts', 'tk_preview_posts');
 
 function tk_preview_posts($atts)
 {
+    $atts = shortcode_atts(
+        array(
+            'category' => '',
+        ),
+        $atts,
+        'tk-preview-posts'
+    );
+
     ob_start(); ?>
     <div class="container">
         <div class="row justify-content-center">
@@ -17,27 +25,30 @@ function tk_preview_posts($atts)
                 <div class="col-md-3">
                     <div class="card m-auto mb-4" style="width: 18rem;">
                         <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
-                        <img class="card-img-top" src="<?php echo $image[0]; ?>" alt="Card image cap">
+                        <?php if ($image) : ?>
+                            <img class="card-img-top" src="<?php echo esc_url($image[0]); ?>" alt="<?php echo esc_attr($post->post_title); ?>">
+                        <?php endif; ?>
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $post->post_title ?></h5>
+                            <h5 class="card-title"><?php echo esc_html($post->post_title); ?></h5>
                             <?php
-                            if (strlen($post->post_content) > 149) { ?>
-                                <p class="card-text"><?php echo substr($post->post_content, 0, 150) . '...' ?></p>
+                            $excerpt = wp_strip_all_tags($post->post_content);
+                            if (strlen($excerpt) > 149) { ?>
+                                <p class="card-text"><?php echo esc_html(substr($excerpt, 0, 150)) . '&hellip;'; ?></p>
                             <?php } else { ?>
-                                <p class="card-text"><?php echo $post->post_content ?></p>
+                                <p class="card-text"><?php echo esc_html($excerpt); ?></p>
                             <?php }
                             $git_url = get_post_meta($post->ID, 'github_repo_url', true);
                             if ($git_url) { ?>
-                                <a href="<?php echo $git_url ?>" target="_blank" class="btn btn-outline-primary">View on GitHub &nbsp<i class="fab fa-github"></i></a>
+                                <a href="<?php echo esc_url($git_url); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">View on GitHub &nbsp;<i class="fab fa-github" aria-hidden="true"></i></a>
                             <?php } ?>
                         </div>
                     </div>
                 </div>
             <?php
-            endforeach; ?>
+            endforeach;
+            wp_reset_postdata(); ?>
 
         </div>
     </div>
 <?php return ob_get_clean();
 }
-?>
