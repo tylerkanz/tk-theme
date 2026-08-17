@@ -6,7 +6,6 @@
 
 //Customizer Functions
 require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/patterns.php';
 
 add_theme_support('automatic-feed-links');
 add_theme_support('responsive-embeds');
