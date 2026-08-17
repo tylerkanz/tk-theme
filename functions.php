@@ -73,14 +73,3 @@ function disable_wp_auto_p($content)
 }
 add_filter('the_content', 'disable_wp_auto_p', 0);
 
-
-add_filter('the_content', 'remove_unneeded_silly_p_tags_from_shortcodes');
-function remove_unneeded_silly_p_tags_from_shortcodes($the_content){
-    $array = array (
-        '<p>'      => '',
-        '</p>'     => '<br /><br />'
-    );
-    $the_content = strtr($the_content, $array); //replaces instances of the keys in the array with their values
-    return $the_content;
-}
-
